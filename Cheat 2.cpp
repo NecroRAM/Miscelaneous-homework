@@ -15,7 +15,7 @@ void print_mat(const mat &m)
 		bool first = true;
 		for (int j = 0; j < m.size(); ++j)
 		{
-			std::cout << std::right << std::setw(4) << m[i][j];
+			std::cout << std::right << (first ? std::setw(3) : std::setw(4)) << m[i][j];
 			first = false;
 		}
 		std::cout << "\n\n";
